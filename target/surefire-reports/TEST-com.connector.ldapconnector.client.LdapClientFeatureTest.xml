@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.connector.ldapconnector.client.LdapClientFeatureTest" time="0.118" tests="4" errors="1" skipped="0" failures="0">
+<testsuite name="com.connector.ldapconnector.client.LdapClientFeatureTest" time="0.146" tests="4" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre/lib"/>
@@ -63,10 +63,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|localhost|*.localhost"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="create" classname="com.connector.ldapconnector.client.LdapClientFeatureTest" time="0.083"/>
+  <testcase name="create" classname="com.connector.ldapconnector.client.LdapClientFeatureTest" time="0.118"/>
   <testcase name="modify" classname="com.connector.ldapconnector.client.LdapClientFeatureTest" time="0"/>
   <testcase name="search" classname="com.connector.ldapconnector.client.LdapClientFeatureTest" time="0.002"/>
-  <testcase name="authenticate" classname="com.connector.ldapconnector.client.LdapClientFeatureTest" time="0.033">
+  <testcase name="authenticate" classname="com.connector.ldapconnector.client.LdapClientFeatureTest" time="0.026">
     <error message="localhost:389; nested exception is javax.naming.CommunicationException: localhost:389 [Root exception is java.net.ConnectException: Connection refused (Connection refused)]" type="org.springframework.ldap.CommunicationException"><![CDATA[org.springframework.ldap.CommunicationException: localhost:389; nested exception is javax.naming.CommunicationException: localhost:389 [Root exception is java.net.ConnectException: Connection refused (Connection refused)]
 	at java.net.PlainSocketImpl.socketConnect(Native Method)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
@@ -96,7 +96,7 @@
 	at org.springframework.ldap.core.support.AbstractContextSource.doGetContext(AbstractContextSource.java:139)
 	at org.springframework.ldap.core.support.AbstractContextSource.getContext(AbstractContextSource.java:130)
 	at com.connector.ldapconnector.client.LdapClient.authenticate(LdapClient.java:28)
-	at com.connector.ldapconnector.client.LdapClientFeatureTest.authenticate(LdapClientFeatureTest.java:28)
+	at com.connector.ldapconnector.client.LdapClientFeatureTest.authenticate(LdapClientFeatureTest.java:27)
 ]]></error>
   </testcase>
 </testsuite>
