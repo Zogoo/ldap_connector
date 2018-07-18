@@ -10,6 +10,7 @@ import org.springframework.ldap.odm.annotations.Id;
 @Data
 @Builder
 @NoArgsConstructor
+@AllArgsConstructor
 @Entry(base = "ou=users", objectClasses = { "person", "inetOrgPerson", "top" })
 public class User  {
 

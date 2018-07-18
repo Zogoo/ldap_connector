@@ -5,7 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.ldap.core.LdapTemplate;
 import org.springframework.ldap.core.support.LdapContextSource;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LdapContext {
     @Autowired
     private LdapSettings ldapSettings;

@@ -6,5 +6,5 @@ spring:
     partition: example
     principal: uid=admin,ou=system
     password: secret
-    port: 389
-    url: ldap://localhost:389
+    port: 18889
+    url: ldap://localhost:18889

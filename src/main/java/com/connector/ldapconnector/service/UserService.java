@@ -3,6 +3,7 @@ package com.connector.ldapconnector.service;
 import com.connector.ldapconnector.models.User;
 import com.connector.ldapconnector.models.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.ldap.support.LdapUtils;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,7 @@ import java.util.stream.Collectors;
 public class UserService {
 
     @Autowired
+    @Qualifier("LdapUserRepo")
     private UserRepository userRepository;
 
     public Boolean authenticate(final String username, final String password) {

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+@Repository("LdapUserRepo")
 public interface UserRepository extends LdapRepository<User> {
 
     User findByUsername(String username);

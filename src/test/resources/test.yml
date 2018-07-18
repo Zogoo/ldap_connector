@@ -1,0 +1,10 @@
+spring:
+  active:
+    profiles: dev
+ldap:
+  partitionSuffix: dc=dummycustomer,dc=com
+  partition: example
+  principal: uid=admin,ou=system
+  password: secret
+  port: 389
+  url: ldap://localhost:389
