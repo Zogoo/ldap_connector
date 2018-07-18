@@ -26,6 +26,8 @@
         <spring-data-jpa.version>2.0.3.RELEASE</spring-data-jpa.version>
         <apacheds.version>1.5.5</apacheds.version>
         <shared-ldap.version>0.9.15</shared-ldap.version>
+        <maven-surefire-plugin.version>2.18</maven-surefire-plugin.version>
+        <maven-failsafe.version>2.18</maven-failsafe.version>
 	</properties>
 
 	<dependencies>
@@ -93,4 +95,57 @@
 			</plugin>
 		</plugins>
 	</build>
+
+    <profiles>
+        <profile>
+            <id>feature</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <phase>integration-test</phase>
+                                <goals>
+                                    <goal>test</goal>
+                                </goals>
+                                <configuration>
+                                    <excludes>
+                                        <exclude>**/*UnitTest.java</exclude>
+                                    </excludes>
+                                    <includes>
+                                        <include>**/*FeatureTest.java</include>
+                                    </includes>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <!-- Running integration test folder -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <version>${maven-failsafe.version}</version>
+                        <executions>
+                            <execution>
+                                <id>integration-tests</id>
+                                <goals>
+                                    <goal>test</goal>
+                                </goals>
+                                <configuration>
+                                    <excludes>
+                                        <exclude>**/*UnitTest.java</exclude>
+                                    </excludes>
+                                    <includes>
+                                        <include>**/*FeatureTest.java</include>
+                                    </includes>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
