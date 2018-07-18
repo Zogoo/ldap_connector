@@ -2,9 +2,9 @@ spring:
   active:
     profiles: dev
   ldap:
-    partitionSuffix: dc=example,dc=com
+    partitionSuffix: dc=dummycustomer,dc=com
     partition: example
-    principal: uid=admin,ou=system
-    password: secret
+    principal: CN=Administrator,CN=Users,DC=dummycustomer,DC=com
+    password: '!QAZ2wsx'
     port: 389
-    url: ldap://localhost:389
+    url: ldap://192.168.56.101:389

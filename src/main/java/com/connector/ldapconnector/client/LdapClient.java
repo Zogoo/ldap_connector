@@ -24,8 +24,8 @@ public class LdapClient {
     @Autowired
     private LdapTemplate ldapTemplate;
 
-    public void authenticate(final String username, final String password) {
-        contextSource.getContext("cn=" + username + ",ou=users," + ldapSettings.getPartitionSuffix(), password);
+    public void authenticate() {
+        contextSource.getContext(ldapSettings.getPartition()+ "," + ldapSettings.getPartitionSuffix(), ldapSettings.getPassword());
     }
 
     public List<String> search(final String username) {

@@ -4,7 +4,7 @@ spring:
   ldap:
     partitionSuffix: dc=dummycustomer,dc=com
     partition: example
-    principal: CN=Administrator,CN=Users,DC=dummycustomer,DC=com
+    principal: CN=Administrator,CN=Users
     password: !QAZ2wsx
     port: 389
     url: ldap://192.168.56.101:389

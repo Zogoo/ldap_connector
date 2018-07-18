@@ -1,27 +1,34 @@
-package com.connector.ldapconnector.client;
+package com.connector.ldapconnector.service;
 
-import org.junit.After;
+import com.connector.ldapconnector.settings.LdapSettings;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestPropertySource;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@TestPropertySource(locations={"classpath:application.yml", "classpath:application-test.yml"})
-public class LdapClientFeatureTest {
+@PropertySource("classpath:application-test.yml")
+public class UserServiceTest {
 
     @Autowired
-    private LdapClient ldapClient;
+    UserService userService;
+
+    @Autowired
+    LdapSettings ldapSettings;
+
+    @Before
+    public void setUp() throws Exception {
+    }
 
     @Test
     public void authenticate() {
-        ldapClient.authenticate();
+        userService.authenticate(ldapSettings.getPrincipal(), ldapSettings.getPassword());
     }
 
     @Test

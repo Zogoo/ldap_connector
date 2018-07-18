@@ -22,7 +22,7 @@ public class UserService {
     private UserRepository userRepository;
 
     public Boolean authenticate(final String username, final String password) {
-        User user = userRepository.findByUsernameAndPassword(username, password);
+        final User user = userRepository.findByUsernameAndPassword(username, password);
         return user != null;
     }
 
