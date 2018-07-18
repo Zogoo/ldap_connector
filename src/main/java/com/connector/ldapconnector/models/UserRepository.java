@@ -1,4 +1,4 @@
-package com.connector.ldapconnector.model;
+package com.connector.ldapconnector.models;
 
 import org.springframework.data.ldap.repository.LdapRepository;
 import org.springframework.stereotype.Repository;
