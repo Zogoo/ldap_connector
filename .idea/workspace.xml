@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3feb0392-2230-40e0-8add-264c0818c576" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ldap_connector.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ldap_connector.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/client/LdapContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/client/LdapContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/models/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/models/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/settings/LdapSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/settings/LdapSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../ad_service/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,29 +18,30 @@
       <file leaf-file-name="LdapClientFeatureTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/connector/ldapconnector/client/LdapClientFeatureTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="504">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
+                <element signature="e#800#801#0" expanded="true" />
                 <element signature="e#855#856#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <file leaf-file-name="test.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/test.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="42">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/test.yml">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="189">
+              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -71,6 +65,7 @@
       <find>findByUsername</find>
       <find>UserRepository</find>
       <find>userRepository</find>
+      <find>partition</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -457,12 +452,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LdapClientFeatureTest_authenticate - 2018.07.18 at 14h 48m 04s.xml">
-      <configuration name="LdapClientFeatureTest.authenticate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LdapClientFeatureTest_authenticate - 2018.07.18 at 14h 54m 48s.xml">
-      <configuration name="LdapClientFeatureTest.authenticate" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LdapClientFeatureTest_authenticate - 2018.07.18 at 14h 57m 01s.xml">
       <configuration name="LdapClientFeatureTest.authenticate" configurationId="JUnit" />
     </history-entry>
@@ -487,6 +476,12 @@
     <history-entry file="LdapClientFeatureTest_authenticate - 2018.07.18 at 15h 37m 14s.xml">
       <configuration name="LdapClientFeatureTest.authenticate" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LdapClientFeatureTest_authenticate - 2018.07.18 at 15h 45m 32s.xml">
+      <configuration name="LdapClientFeatureTest.authenticate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LdapClientFeatureTest_authenticate - 2018.07.18 at 15h 48m 05s.xml">
+      <configuration name="LdapClientFeatureTest.authenticate" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -505,14 +500,14 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997996" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997996" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="2" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3296593" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3296593" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3296593" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15178572" />
@@ -721,16 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/settings/LdapSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/models/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -751,27 +736,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connector/ldapconnector/settings/LdapSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/connector/ldapconnector/client/LdapClientFeatureTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="504">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
+            <element signature="e#800#801#0" expanded="true" />
             <element signature="e#855#856#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/test.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="42">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/test.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="189">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>

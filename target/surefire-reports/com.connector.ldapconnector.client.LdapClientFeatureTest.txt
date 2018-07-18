@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.connector.ldapconnector.client.LdapClientFeatureTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.315 sec <<< FAILURE! - in com.connector.ldapconnector.client.LdapClientFeatureTest
+authenticate(com.connector.ldapconnector.client.LdapClientFeatureTest)  Time elapsed: 0.033 sec  <<< ERROR!
+org.springframework.ldap.CommunicationException: localhost:389; nested exception is javax.naming.CommunicationException: localhost:389 [Root exception is java.net.ConnectException: Connection refused (Connection refused)]
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at com.sun.jndi.ldap.Connection.createSocket(Connection.java:363)
+	at com.sun.jndi.ldap.Connection.<init>(Connection.java:203)
+	at com.sun.jndi.ldap.LdapClient.<init>(LdapClient.java:137)
+	at com.sun.jndi.ldap.LdapClient.getInstance(LdapClient.java:1615)
+	at com.sun.jndi.ldap.LdapCtx.connect(LdapCtx.java:2749)
+	at com.sun.jndi.ldap.LdapCtx.<init>(LdapCtx.java:319)
+	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURL(LdapCtxFactory.java:192)
+	at com.sun.jndi.ldap.LdapCtxFactory.getUsingURLs(LdapCtxFactory.java:210)
+	at com.sun.jndi.ldap.LdapCtxFactory.getLdapCtxInstance(LdapCtxFactory.java:153)
+	at com.sun.jndi.ldap.LdapCtxFactory.getInitialContext(LdapCtxFactory.java:83)
+	at javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:684)
+	at javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:313)
+	at javax.naming.InitialContext.init(InitialContext.java:244)
+	at javax.naming.ldap.InitialLdapContext.<init>(InitialLdapContext.java:154)
+	at org.springframework.ldap.core.support.LdapContextSource.getDirContextInstance(LdapContextSource.java:42)
+	at org.springframework.ldap.core.support.AbstractContextSource.createContext(AbstractContextSource.java:343)
+	at org.springframework.ldap.core.support.AbstractContextSource.doGetContext(AbstractContextSource.java:139)
+	at org.springframework.ldap.core.support.AbstractContextSource.getContext(AbstractContextSource.java:130)
+	at com.connector.ldapconnector.client.LdapClient.authenticate(LdapClient.java:28)
+	at com.connector.ldapconnector.client.LdapClientFeatureTest.authenticate(LdapClientFeatureTest.java:28)
+

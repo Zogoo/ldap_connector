@@ -1,4 +1,7 @@
+/Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/models/User.java
 /Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/LdapConnectorApplication.java
 /Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/service/UserService.java
-/Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/model/User.java
-/Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/model/UserRepository.java
+/Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/settings/LdapSettings.java
+/Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/models/UserRepository.java
+/Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/client/LdapClient.java
+/Users/tsogbadrakh/java-workspace/ldap_connector/src/main/java/com/connector/ldapconnector/client/LdapContext.java

@@ -1,1 +1,2 @@
 com/connector/ldapconnector/LdapConnectorApplicationTests.class
+com/connector/ldapconnector/client/LdapClientFeatureTest.class
