@@ -1,0 +1,4 @@
+com/connector/ldapconnector/model/User.class
+com/connector/ldapconnector/LdapConnectorApplication.class
+com/connector/ldapconnector/service/UserService.class
+com/connector/ldapconnector/model/UserRepository.class
